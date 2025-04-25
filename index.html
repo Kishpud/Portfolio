@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kishor Pudasaini | Cybersecurity Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Space Grotesk', sans-serif;
+      background: linear-gradient(to right, rgba(13,13,13,0.85), rgba(30,30,47,0.85)), url('https://images.unsplash.com/photo-1568744400847-9534a6b660a0?auto=format&fit=crop&w=1400&q=80');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0,0,0,0.8);
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 4rem 2rem;
+      gap: 2rem;
+    }
+    header img {
+      animation: fadeIn 1s ease-in-out;
+    }
+    .skills-section, section {
+      padding: 4rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .poll-result {
+      color: #48bb78;
+      font-weight: bold;
+      margin-top: 1rem;
+      display: none;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: rgba(0,0,0,0.8);
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      justify-content: center;
+    }
+    .skill-badge {
+      background: rgba(177,140,217,0.1);
+      border: 1px solid rgba(177,140,217,0.3);
+      color: #fff;
+      padding: 0.6rem 1rem;
+      border-radius: 20px;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <nav role="navigation">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#cyberpoll">Poll</a></li>
+    </ul>
+  </nav>
+  <header>
+    <img src="https://i.imgur.com/Akom2Vg.jpg" alt="Kishor Pudasaini" style="max-width:300px; border-radius: 16px; box-shadow: 0 0 25px rgba(177,140,217,0.6);" />
+    <div>
+      <h1 style="color:#b18cd9;">Hi, I'm <span id="typedName"></span></h1>
+      <p id="typed-subtitle" style="font-size: 1.2rem; color:#ccc;"></p>
+      <p style="max-width:600px; margin: auto;">Aspiring Network/System Engineer and Cybersecurity Graduate. Passionate about secure systems, solving real-world problems, and impactful IT support.</p>
+    </div>
+  </header>
+
+  <section id="about" class="skills-section" data-aos="fade-up">
+    <h2 style="text-align:center; color:#b18cd9;">👨‍💻 About</h2>
+    <p style="max-width:800px; margin:auto; color:#ccc; font-size:1.05rem; text-align:center;">
+      I am Kishor Pudasaini, an IT graduate specialized in Cybersecurity. With a strong foundation in systems, cloud, and network security, my goal is to support organizations in building secure, resilient, and cost-effective IT infrastructures. I combine technical proficiency with a passion for governance and digital transformation to make a meaningful impact in both local and global contexts.
+    </p>
+  </section>
+
+  <section id="education" class="skills-section" data-aos="fade-up">
+    <h2 style="text-align:center; color:#b18cd9;">🎓 Education</h2>
+    <div style="max-width:800px; margin:auto; color:#ccc; font-size:1rem;">
+      <p><strong>Master of Information Technology (Cybersecurity)</strong><br>
+      Swinburne University of Technology, Sydney — 2023–2024</p>
+      <ul>
+        <li>Projects: Cloud Cost Management, Cybersecurity Awareness, Network Security Simulation</li>
+        <li>Subjects: IT Infrastructure, Cloud Architecture, Cybersecurity Frameworks, Big Data</li>
+      </ul>
+      <p><strong>Bachelor of Business Information Systems</strong><br>
+      Asia Pacific International College — 2021–2023</p>
+      <p><strong>Advanced Diploma in Network Security</strong><br>
+      Australian Harbour International College — 2020–2021</p>
+    </div>
+  </section>
+
+  <section id="skills" class="skills-section" data-aos="fade-up">
+    <h2 style="text-align:center; color:#b18cd9;">🧠 Skills</h2>
+    <div class="skills-grid">
+      <span class="skill-badge">Active Directory</span>
+      <span class="skill-badge">Azure AD</span>
+      <span class="skill-badge">Linux & Windows Servers</span>
+      <span class="skill-badge">Python & Bash Scripting</span>
+      <span class="skill-badge">Network Troubleshooting</span>
+      <span class="skill-badge">AWS & Azure Fundamentals</span>
+      <span class="skill-badge">Wireshark & Packet Analysis</span>
+      <span class="skill-badge">Office 365 Admin</span>
+      <span class="skill-badge">IT Support & Ticketing Tools</span>
+      <span class="skill-badge">Cybersecurity Awareness</span>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Kishor Pudasaini. All rights reserved.</p>
+  </footer>
+
+  <script>
+    AOS.init();
+    const typed = new Typed("#typedName", {
+      strings: ["Kishor Pudasaini"],
+      typeSpeed: 60,
+      showCursor: false,
+      onComplete: () => {
+        new Typed("#typed-subtitle", {
+          strings: ["Cybersecurity Graduate", "System Engineer", "Support Enthusiast"],
+          typeSpeed: 50,
+          backSpeed: 25,
+          loop: true
+        });
+      }
+    });
+  </script>
+</body>
+</html>
+</script>
+  <style>
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #b18cd9;
+    color: #000;
+    padding: 0.5rem 1rem;
+    z-index: 10000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 0 0 6px 6px;
+    transition: top 0.3s;
+  }
+  .skip-link:focus {
+    top: 0;
+  }
+    body {
+      margin: 0;
+      font-family: 'Space Grotesk', sans-serif;
+      background: linear-gradient(to right, rgba(13,13,13,0.85), rgba(30,30,47,0.85)), url('https://images.unsplash.com/photo-1568744400847-9534a6b660a0?auto=format&fit=crop&w=1400&q=80');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+    nav {
+      display: flex; justify-content: space-between; align-items: center;
+      background: rgba(0,0,0,0.8); padding: 1rem 2rem; position: sticky; top: 0; z-index: 999;
+    }
+    nav ul { display: flex; list-style: none; gap: 1.5rem; }
+    nav a { color: #fff; text-decoration: none; font-weight: bold; }
+    header {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+      text-align: center; padding: 4rem 2rem; gap: 2rem;
+    }
+    header img {
+      animation: fadeIn 1s ease-in-out;
+    }
+    .project-card {
+      background: rgba(255,255,255,0.03); padding: 1.5rem; border-radius: 12px;
+      border: 1px solid rgba(177,140,217,0.15); box-shadow: 0 0 10px rgba(177,140,217,0.1);
+      transition: all 0.3s ease;
+    }
+    .project-card:hover { transform: translateY(-6px); box-shadow: 0 0 20px rgba(177,140,217,0.4); }
+    .skills-section, section { padding: 4rem 2rem; max-width: 1100px; margin: auto; }
+    .skills-grid {
+      display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center;
+    }
+    .skill-badge {
+      background: rgba(177,140,217,0.1); border: 1px solid rgba(177,140,217,0.3);
+      color: #fff; padding: 0.6rem 1rem; border-radius: 20px; font-size: 0.95rem;
+    }
+    footer {
+      text-align: center; padding: 2rem;
+      background: rgba(0,0,0,0.8); color: #aaa; font-size: 0.9rem;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    button:focus {
+    outline: 2px solid #b18cd9;
+    box-shadow: 0 0 8px #b18cd9;
+  }
+  input[type="radio"]:focus + label,
+  label:has(input[type="radio"]:focus) {
+    outline: 2px dashed #b18cd9;
+    padding: 0.25rem;
+    border-radius: 4px;
+  }
+</style>
+<script>
+  // Light/Dark mode toggle (bonus feature)
+  function toggleMode() {
+    document.body.classList.toggle('light-mode');
+  }
+</script>
+<style>
+  .light-mode {
+    background: #f5f5f5;
+    color: #111;
+  }
+  .light-mode nav, .light-mode footer {
+    background: rgba(255,255,255,0.9);
+    color: #000;
+  }
+  .light-mode .project-card, .light-mode .skills-section, .light-mode section {
+    background: rgba(255,255,255,0.06);
+    color: #111;
+  }
+  #modeToggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #b18cd9;
+    border: none;
+    border-radius: 50px;
+    padding: 0.8rem 1.4rem;
+    font-weight: bold;
+    color: #111;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="sr-only" aria-hidden="false">Welcome to the portfolio site of Kishor Pudasaini, a cybersecurity graduate passionate about building secure systems and impactful tech solutions.</div>
+  <a href="#cyberpoll" class="skip-link">⏩ Skip to Poll</a>
+  <a href="#projects" class="skip-link">⏩ Skip to Projects</a>
+  
+<main role="main">
+
+  <section id="certifications" class="skills-section">
+  <h2 style="text-align:center; color:#b18cd9;">🎖️ Certifications</h2>
+  <div class="skills-grid">
+    <span class="skill-badge">Microsoft 365 Certified</span>
+    <span class="skill-badge">CompTIA Network+ (In Progress)</span>
+    <span class="skill-badge">Python Essentials</span>
+  </div>
+</section>
+
+<section id="counters" style="text-align:center; padding: 4rem 2rem;">
+  <h2 style="color:#b18cd9;">📊 Snapshot</h2>
+  <div style="display:flex; justify-content:center; gap:3rem; flex-wrap: wrap;">
+    <div><h3 style="font-size:2rem; color:#fff;">10+</h3><p>Projects Completed</p></div>
+    <div><h3 style="font-size:2rem; color:#fff;">3+</h3><p>Certifications</p></div>
+    <div><h3 style="font-size:2rem; color:#fff;">100%</h3><p>Dedication to IT</p></div>
+  </div>
+</section>
+
+<section id="resume" style="text-align:center; padding:2rem 0;">
+  <a href="Updated_Resume_IT_KP.docx" download style="background:#b18cd9; padding:1rem 2rem; color:#000; text-decoration:none; border-radius:8px; font-weight:bold;">⬇️ Download My Resume (.docx)</a>
+>
+</section>
+
+<section id="testimonials" class="skills-section">
+  <h2 style="text-align:center; color:#b18cd9;">🌟 Testimonials</h2>
+  <blockquote style="font-style:italic; border-left: 4px solid #b18cd9; padding-left: 1rem; margin: 1rem 0;">“Kishor consistently demonstrated a proactive approach and deep passion for cybersecurity during our university group projects.”<br>— Swinburne Lecturer</blockquote>
+  <blockquote style="font-style:italic; border-left: 4px solid #b18cd9; padding-left: 1rem; margin: 1rem 0;">“His commitment to learning and attention to detail makes him a standout IT professional.”<br>— Former Team Leader at ALDI</blockquote>
+</section>
+
+<section id="vision" class="skills-section" style="text-align:center; padding:4rem 2rem; background: linear-gradient(to right, #1a1a1a, #222);">
+  <div data-aos="zoom-in" data-aos-delay="100">
+    <h2 style="color:#b18cd9; font-size:2.2rem; margin-bottom:1rem;">✨ Elevating Through Innovation</h2>
+    <img src="https://cdn-icons-png.flaticon.com/512/4727/4727425.png" alt="Tech Vision" style="width:100px; margin-bottom:1rem;" />
+    <p style="color:#ccc; max-width:720px; margin:auto; font-size:1.05rem;">
+      Instead of showcasing a single technical breakdown, I believe in designing experiences that inspire and inform. My journey as a cybersecurity graduate and aspiring researcher is powered by purpose—building digital systems that are not just functional, but transformative.
+    </p>
+    <p style="color:#aaa; max-width:720px; margin:2rem auto 1rem; font-size:0.95rem;">
+      Cybersecurity professionals are the digital guardians of today’s world—defending privacy, safeguarding infrastructure, and ensuring trust across all sectors. In an age where data is power, our role is more vital than ever.
+    </p>
+    <div style="display:flex; justify-content:center; gap:2rem; flex-wrap:wrap; margin: 2rem 0;">
+      <div style="text-align:center; max-width:250px;">
+        <img src="https://cdn-icons-png.flaticon.com/512/3143/3143636.png" alt="Global Threats" style="width:60px; margin-bottom:0.5rem;" />
+        <p style="font-size:0.9rem; color:#ccc;">By 2025, cybercrime is projected to cost the world $10.5 trillion annually.</p>
+      </div>
+      <div style="text-align:center; max-width:250px;">
+        <img src="https://cdn-icons-png.flaticon.com/512/2659/2659360.png" alt="Cyber Workforce" style="width:60px; margin-bottom:0.5rem;" />
+        <p style="font-size:0.9rem; color:#ccc;">There is a global shortage of over 3.5 million cybersecurity professionals.</p>
+      </div>
+    </div>
+    <blockquote style="color:#aaa; font-style:italic; max-width:600px; margin:auto;">
+      "Cybersecurity is much more than a matter of IT." — Stéphane Nappo
+    </blockquote>
+    <p style="color:#aaa; max-width:720px; margin:auto; font-size:0.95rem; margin-top:2rem;">
+      Whether it’s reducing rural health disparities through tech, designing future-proof civic platforms, or building resilient IT infrastructure, my portfolio reflects projects rooted in impact.<br><br>
+      🌍 Let’s build tech that uplifts nations.
+    </p>
+  </div>
+</section>
+<section id="cyberpoll" class="skills-section" data-aos="fade-up" style="text-align:center;">
+  <h2 style="color:#b18cd9;">🗳️ Your Thoughts Matter</h2>
+  <p style="max-width: 700px; margin: auto; color: #ccc; font-size: 1.05rem;">What do you believe is the biggest cybersecurity challenge in today's world?</p>
+  <form onsubmit="submitPoll(event)" style="margin-top: 1rem;">
+    <label><input type="radio" name="cyberQ" value="Data Privacy"> Data Privacy</label><br>
+    <label><input type="radio" name="cyberQ" value="Phishing & Social Engineering"> Phishing & Social Engineering</label><br>
+    <label><input type="radio" name="cyberQ" value="Lack of Awareness"> Lack of Awareness</label><br>
+    <label><input type="radio" name="cyberQ" value="Insider Threats"> Insider Threats</label><br>
+    <label><input type="radio" name="cyberQ" value="Outdated Systems"> Outdated Systems</label><br>
+    <button type="submit" aria-label="Submit your vote" style="margin-top:1rem; background:#b18cd9; padding:0.6rem 1.2rem; color:#000; font-weight:bold; border:none; border-radius:6px; cursor:pointer;">Submit Vote</button>
+  </form>
+  <p id="pollMsg" class="poll-result">✅ Thank you for sharing your opinion!</p>
+  <ul id="simpleResults" style="margin-top: 1rem; display: none; list-style: none; padding: 0; color: #ccc;"></ul>
+</section>
+<!-- 💬 Comments Section -->
+<section id="poll-comments" class="skills-section" style="text-align:center;">
+  <h3 style="color:#b18cd9;">💬 Share Your Thoughts</h3>
+  <p style="max-width:700px; margin:auto; color:#ccc; font-size:1rem;">Do you have additional thoughts or a unique perspective on cybersecurity challenges? Leave a quick comment below:</p>
+  <form style="margin-top:1rem; display:flex; flex-direction:column; align-items:center; gap:0.75rem;">
+    <input type="text" placeholder="Your Name (optional)" style="width:90%; max-width:500px; padding:0.6rem; border-radius:6px; border:none;" />
+    <textarea placeholder="Your comment..." rows="4" style="width:90%; max-width:500px; padding:0.6rem; border-radius:6px; border:none;"></textarea>
+    <button type="button" aria-label="Submit your comment" onclick="showCommentMessage()" style="background:#b18cd9; padding:0.6rem 1.2rem; color:#000; font-weight:bold; border:none; border-radius:6px; cursor:pointer;">Submit Comment</button>
+  </form>
+  <p id="commentSuccess" style="color:#48bb78; margin-top:1rem; display:none;">✅ Thanks! Your comment has been submitted.</p>
+<div id="commentList" style="margin-top:2rem; max-width:700px; margin:auto; text-align:left; color:#ccc;"></div>
+</section>
+
+<script>
+function showCommentMessage() {
+  const name = document.querySelector('#poll-comments input').value;
+  const comment = document.querySelector('#poll-comments textarea').value;
+  const msg = document.getElementById('commentSuccess');
+
+  const blacklist = ['spam', 'badword'];
+  if (blacklist.some(word => comment.toLowerCase().includes(word))) {
+    msg.textContent = '🚫 Please avoid inappropriate content.';
+    msg.style.color = 'orange';
+    msg.style.display = 'block';
+    setTimeout(() => { msg.style.display = 'none'; msg.textContent = '✅ Thanks! Your comment has been submitted.'; msg.style.color = '#48bb78'; }, 5000);
+    return;
+  }
+
+  fetch('https://script.google.com/macros/s/AKfycbyKJK1dY1nCgbGVO7sFJCWsebOt-C8bqwZxBB15ATR-ao4G5GVSF9fiwk8FVKfe8p7p/exec', {
+    method: 'POST',
+    mode: 'no-cors',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ name, comment })
+  });
+
+  msg.textContent = '✅ Thanks! Your comment has been submitted.';
+  msg.style.color = '#48bb78';
+  msg.style.display = 'block';
+  setTimeout(() => { msg.style.display = 'none'; }, 5000);
+  document.querySelector('#poll-comments input').value = '';
+  document.querySelector('#poll-comments textarea').value = '';
+  loadComments();
+}, 5000);
+}
+function loadComments() {
+  fetch('https://script.google.com/macros/s/AKfycbyKJK1dY1nCgbGVO7sFJCWsebOt-C8bqwZxBB15ATR-ao4G5GVSF9fiwk8FVKfe8p7p/exec?action=comments')
+    .then(res => res.json())
+    .then(data => {
+      const list = document.getElementById('commentList');
+      if (!list) return;
+      list.innerHTML = '<h4 style="color:#b18cd9;">🗣️ Recent Comments</h4>';
+      data.reverse().slice(0, 5).forEach(entry => {
+        const div = document.createElement('div');
+        div.style.padding = '0.5rem 0';
+        div.innerHTML = `<strong>\${entry.name || 'Anonymous'}:</strong> <span style='color:#aaa;'>"\${entry.comment}"</span>`;
+        list.appendChild(div);
+      });
+    });
+}
+loadComments();
+</script>
+<section id="future" class="skills-section" data-aos="fade-up">
+  <h2 style="text-align:center; color:#b18cd9;">🎯 What's Next</h2>
+  <p style="text-align:center; max-width:750px; margin:auto; font-size:1.05rem; color:#ccc;">
+    I am currently preparing to pursue a PhD with a research focus on using IT and digital platforms to drive political transparency, reduce corruption, and improve governance in emerging nations like Nepal. 
+    My goal is to design scalable civic-tech solutions that empower communities and promote accountability through cybersecurity, digital identity, and inclusive tech access.
+  </p>
+  <p style="text-align:center; max-width:700px; margin: 1rem auto; font-size:1rem; color:#aaa;">
+    If you're interested in academic collaboration or tech-driven development projects, feel free to reach out!</p>
+</section>
+
+<section id="phd-vision" class="skills-section" data-aos="fade-up">
+  <h2 style="text-align:center; color:#b18cd9;">📚 My PhD Vision</h2>
+  <p style="max-width: 800px; margin: auto; color:#ccc; font-size: 1.05rem;">
+    As I pursue a future PhD, my core research will explore how technology—especially cybersecurity and civic platforms—can be used to improve governance and reduce political corruption in developing nations like Nepal. 
+    I aim to bridge the gap between digital innovation and grassroots governance by designing secure, scalable civic tech tools that promote transparency and citizen engagement.
+  </p>
+  <p style="text-align:center; color:#aaa; font-size: 0.95rem; max-width:700px; margin:auto;">
+    My research interests include blockchain for digital identity, e-governance infrastructure, open-data tools for accountability, and digital diplomacy in post-conflict democracies.
+  </p>
+  <p style="text-align:center; margin-top: 1.5rem;">
+    <a href="#blog" style="color:#b18cd9; font-weight:bold; text-decoration:underline;">📝 Read Blog Articles on My Ideas</a>
+  </p>
+</section>
+
+<section id="blog" class="skills-section" data-aos="fade-up">
+  <h2 style="text-align:center; color:#b18cd9;">📝 Thought Articles & Blog</h2>
+  <p style="text-align:center; max-width: 800px; margin: auto; color: #ccc; font-size:1rem;">
+    I regularly publish articles exploring how digital platforms, open source tools, and secure systems can drive social reform. Below are some of my recent thoughts:
+  </p>
+  <p style="text-align:center; font-size:0.95rem; color:#aaa;">(Click to read full articles)</p>
+  <ul style="list-style: none; padding: 0; max-width: 750px; margin: 2rem auto;">
+    <li style="margin-bottom:1.5rem;">
+      <a href="/blog/article1.html" style="text-decoration:none;"><strong style="color:#b18cd9;">🔍 Designing Digital Platforms for Post-Monarchy Societies</strong></a><br />
+      <span style="color:#aaa;">Exploring how Nepal and similar nations can use civic-tech to create inclusive governance after major political shifts.</span>
+    </li>
+    <li style="margin-bottom:1.5rem;">
+      <a href="/blog/article2.html" style="text-decoration:none;"><strong style="color:#b18cd9;">🛡️ Cybersecurity as a Pillar of Democracy</strong></a><br />
+      <span style="color:#aaa;">Why secure systems are key to trust, transparency, and fair access in modern governance.</span>
+    </li>
+    <li style="margin-bottom:1.5rem;">
+      <a href="/blog/article3.html" style="text-decoration:none;"><strong style="color:#b18cd9;">🌐 Bridging Global Tools to Local Problems</strong></a><br />
+      <span style="color:#aaa;">Using open-source tools to empower communities and protect cultural heritage digitally.</span>
+    </li>
+  </ul>
+</section>
+
+<section id="projects">
+  <h2 style="text-align:center; color:#b18cd9;">💼 Projects</h2>
+  <div class="project-card"><h3>XGrid – Cloud Cost Optimizer</h3><p>Analyzed AWS & Azure spend to reduce infrastructure cost.</p><div class="tech-used">Tech: AWS, Azure, Excel, Python</div></div>
+  <div class="project-card"><h3>Security Operations Dashboard</h3><p>Built SOC alert dashboard using Splunk and Sysmon logs.</p><div class="tech-used">Tech: Splunk, Sysmon</div></div>
+  <div class="project-card"><h3>Nepal HealthConnect</h3><p>Telehealth app connecting rural areas to doctors.</p><div class="tech-used">Tech: Firebase, JS, HTML</div></div>
+  <div class="project-card"><h3>Online Taxi Booking</h3><p>Location-based ride app with real-time map integration.</p><div class="tech-used">Tech: React, Node, MongoDB</div></div>
+  <div class="project-card"><h3>🛡️ Wireshark PCAP Forensics</h3><p>Used Wireshark to analyze PCAP traffic and identify malware, DNS tunneling, and unencrypted threats in a simulated financial network.</p><div class="tech-used">Tech: Wireshark, TCP/IP, PCAP</div><a href="wireshark.html" style="color:#b18cd9;">View Case Study</a></div>
+  <div class="project-card">
+    <h3>📸 Photo Album Web App (Static Preview)</h3>
+    <p>Recreated static front-end of a cloud-hosted AWS photo album application.</p>
+    <div class="tech-used">Tech: HTML, CSS, JS (Simulated AWS)</div>
+    <ul>
+      <li>Fake photo upload simulation</li>
+      <li>Preview thumbnails using static images</li>
+      <li>Project built for university using EC2, S3, Lambda, RDS</li>
+    </ul>
+    <a href="photo-album-preview.html" target="_blank" style="color:#b18cd9;">🚀 View Static Preview</a><br>
+    <a href="Kishor_Pudasaini_AWS_Photo_Album_Project.pdf" download style="color:#b18cd9;">📄 Download Project Report</a><br>
+    <a href="A_2D_architectural_diagram_illustrates_a_cloud-bas.png" download style="color:#b18cd9;">🖼️ Download Architecture Diagram</a>
+  </div>
+</section>
+
+<section id="contact" role="region" aria-labelledby="contact-heading">
+  <h2 id="contact-heading" style="text-align:center; color:#b18cd9;">📬 Contact</h2>
+  <p>Email: <a href="mailto:pudasainikishor7@gmail.com" style="color:#b18cd9;">pudasainikishor7@gmail.com</a></p>
+  <p>LinkedIn: <a href="https://linkedin.com/in/kishor-pudasaini-62678621b" style="color:#b18cd9;">linkedin.com/in/kishor-pudasaini</a></p>
+</section>
+
+<section id="message" style="max-width: 800px; margin: auto;">
+  <h2 style="text-align:center; color:#b18cd9;">💬 Message Me</h2>
+  <form onsubmit="showSuccess(event)" style="display:flex;flex-direction:column;gap:1rem;">
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit" style="background:#b18cd9;color:#000;padding:0.8rem;border:none;border-radius:8px;font-weight:bold;">Send</button>
+  </form>
+  <p id="form-success" style="display:none;text-align:center;color:#b18cd9;margin-top:1rem;">Message sent successfully!</p>
+</section>
+
+</main>
+
+  <p>© 2025 Kishor Pudasaini. All rights reserved.</p>
+</footer>
+
+<script>
+  AOS.init();
+  const typed = new Typed("#typedName", {
+    strings: ["Kishor Pudasaini"],
+    typeSpeed: 60, showCursor: false,
+    onComplete: () => {
+      new Typed("#typed-subtitle", {
+        strings: ["Cybersecurity Graduate", "System Engineer", "Support Enthusiast"],
+        typeSpeed: 50, backSpeed: 25, loop: true
+      });
+    }
+  });
+  function showSuccess(e) {
+    e.preventDefault();
+    document.getElementById('form-success').style.display = 'block';
+    setTimeout(() => {
+      document.getElementById('form-success').style.display = 'none';
+    }, 4000);
+  }
+</script>
+<button id="modeToggle" onclick="toggleMode()" aria-label="Toggle dark or light mode">🌓 Toggle Mode</button>
+</body>
+</html>
